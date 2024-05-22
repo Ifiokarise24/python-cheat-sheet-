@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Data Types Methods Cheat Sheet</title>
+    <link rel="stylesheet" href="method.css">
+</head>
+<body>
+    <h1>Python Data Types Methods Cheat Sheet</h1>
+
+    <h2>String (<code>str</code>) Methods</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Type</th>
+                <th>Method</th>
+                <th>Description</th>
+                <th>Problem Statement</th>
+                <th>Code Snippet</th>
+                <th>Example Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>str</td>
+                <td>strip()</td>
+                <td>Removes leading and trailing whitespace</td>
+                <td>Remove extra whitespace from input</td>
+                <td><code>user_input = "  Alice  ".strip()</code></td>
+                <td>"Alice"</td>
+            </tr>
+            <tr>
+                <td>str</td>
+                <td>split()</td>
+                <td>Splits a string into a list based on a separator</td>
+                <td>Split a sentence into words</td>
+                <td><code>sentence = "This is a sample sentence."<br>words = sentence.split()</code></td>
+                <td>['This', 'is', 'a', 'sample', 'sentence.']</td>
+            </tr>
+            <tr>
+                <td>str</td>
+                <td>join()</td>
+                <td>Joins a list of strings with a separator</td>
+                <td>Concatenate words into a sentence</td>
+                <td><code>words = ["This", "is", "a", "sentence."]<br>sentence = " ".join(words)</code></td>
+                <td>"This is a sentence."</td>
+            </tr>
+            <tr>
+                <td>str</td>
+                <td>replace()</td>
+                <td>Replaces occurrences of a substring</td>
+                <td>Replace occurrences of a substring</td>
+                <td><code>text = "Hello world"<br>new_text = text.replace("world", "there")</code></td>
+                <td>"Hello there"</td>
+            </tr>
+            <tr>
+                <td>str</td>
+                <td>lower()</td>
+                <td>Converts all characters to lowercase</td>
+                <td>Convert text to lowercase</td>
+                <td><code>text = "HELLO WORLD"<br>lower_text = text.lower()</code></td>
+                <td>"hello world"</td>
+            </tr>
+            <tr>
+                <td>str</td>
+                <td>upper()</td>
+                <td>Converts all characters to uppercase</td>
+                <td>Convert text to uppercase</td>
+                <td><code>text = "hello world"<br>upper_text = text.upper()</code></td>
+                <td>"HELLO WORLD"</td>
+            </tr>
+            <tr>
+                <td>str</td>
+                <td>find()</td>
+                <td>Finds the first occurrence of a substring</td>
+                <td>Find the position of a substring</td>
+                <td><code>text = "Hello world"<br>index = text.find("world")</code></td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>List (<code>list</code>) Methods</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Type</th>
+                <th>Method</th>
+                <th>Description</th>
+                <th>Problem Statement</th>
+                <th>Code Snippet</th>
+                <th>Example Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>list</td>
+                <td>append()</td>
+                <td>Adds an item to the end of the list</td>
+                <td>Add a new item to a shopping list</td>
+                <td><code>shopping_list = ["apples", "bananas"]<br>shopping_list.append("oranges")</code></td>
+                <td>["apples", "bananas", "oranges"]</td>
+            </tr>
+            <tr>
+                <td>list</td>
+                <td>remove()</td>
+                <td>Removes the first occurrence of an item</td>
+                <td>Remove an item from a to-do list</td>
+                <td><code>todo_list = ["clean room", "buy groceries", "do laundry"]<br>todo_list.remove("do laundry")</code></td>
+                <td>["clean room", "buy groceries"]</td>
+            </tr>
+            <tr>
+                <td>list</td>
+                <td>sort()</td>
+                <td>Sorts the list in ascending order</td>
+                <td>Sort a list of numbers</td>
+                <td><code>numbers = [5, 3, 1, 4, 2]<br>numbers.sort()</code></td>
+                <td>[1, 2, 3, 4, 5]</td>
+            </tr>
+            <tr>
+                <td>list</td>
+                <td>pop()</td>
+                <td>Removes and returns the last item</td>
+                <td>Get the last item and remove it</td>
+                <td><code>items = [1, 2, 3, 4]<br>last_item = items.pop()</code></td>
+                <td>4 and items = [1, 2, 3]</td>
+            </tr>
+            <tr>
+                <td>list</td>
+                <td>extend()</td>
+                <td>Adds all items of a list to the end of another list</td>
+                <td>Merge two lists</td>
+                <td><code>list1 = [1, 2, 3]<br>list2 = [4, 5]<br>list1.extend(list2)</code></td>
+                <td>[1, 2, 3, 4, 5]</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Dictionary (<code>dict</code>) Methods</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Type</th>
+                <th>Method</th>
+                <th>Description</th>
+                <th>Problem Statement</th>
+                <th>Code Snippet</th>
+                <th>Example Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>dict</td>
+                <td>get()</td>
+                <td>Returns the value for a specified key</td>
+                <td>Retrieve value safely by key</td>
+                <td><code>person = {"name": "Alice", "age": 25}<br>age = person.get("age")</code></td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>dict</td>
+                <td>keys()</td>
+                <td>Returns a view object of all keys</td>
+                <td>List all keys in the dictionary</td>
+                <td><code>keys = person.keys()</code></td>
+                <td>dict_keys(['name', 'age'])</td>
+            </tr>
+            <tr>
+                <td>dict</td>
+                <td>values()</td>
+                <td>Returns a view object of all values</td>
+                <td>List all values in the dictionary</td>
+                <td><code>values = person.values()</code></td>
+                <td>dict_values(['Alice', 25])</td>
+            </tr>
+            <tr>
+                <td>dict</td>
+                <td>items()</td>
+                <td>Returns a view object of key-value pairs</td>
+                <td>Iterate through key-value pairs</td>
+                <td><code>for key, value in person.items():<br>print(key, value)</code></td>
+                <td>name Alice<br>age 25</td>
+            </tr>
+            <tr>
+                <td>dict</td>
+                <td>pop()</td>
+                <td>Removes the item with the specified key</td>
+                <td>Remove and return a key-value pair</td>
+                <td><code>age = person.pop("age")</code></td>
+                <td>25 and person = {"name": "Alice"}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Set (<code>set</code>) Methods</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Type</th>
+                <th>Method</th>
+                <th>Description</th>
+                <th>Problem Statement</th>
+                <th>Code Snippet</th>
+                <th>Example Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>set</td>
+                <td>add()</td>
+                <td>Adds an item to the set</td>
+                <td>Add an item to a set</td>
+                <td><code>fruits = {"apple", "banana"}<br>fruits.add("orange")</code></td>
+                <td>{"apple", "banana", "orange"}</td>
+            </tr>
+            <tr>
+                <td>set</td>
+                <td>remove()</td>
+                <td>Removes the specified item</td>
+                <td>Remove an item from a set</td>
+                <td><code>fruits.remove("banana")</code></td>
+                <td>{"apple", "orange"}</td>
+            </tr>
+            <tr>
+                <td>set</td>
+                <td>union()</td>
+                <td>Returns a new set with all items from both sets</td>
+                <td>Combine two sets</td>
+                <td><code>set1 = {1, 2, 3}<br>set2 = {3, 4, 5}<br>set3 = set1.union(set2)</code></td>
+                <td>{1, 2, 3, 4, 5}</td>
+            </tr>
+            <tr>
+                <td>set</td>
+                <td>intersection()</td>
+                <td>Returns a set with items common to both sets</td>
+                <td>Find common items in two sets</td>
+                <td><code>set1 = {1, 2, 3}<br>set2 = {2, 3, 4}<br>common = set1.intersection(set2)</code></td>
+                <td>{2, 3}</td>
+            </tr>
+            <tr>
+                <td>set</td>
+                <td>difference()</td>
+                <td>Returns a set with items in the first set but not in the second</td>
+                <td>Find unique items in a set</td>
+                <td><code>unique = set1.difference(set2)</code></td>
+                <td>{1}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Tuple (<code>tuple</code>) Methods</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Type</th>
+                <th>Method</th>
+                <th>Description</th>
+                <th>Problem Statement</th>
+                <th>Code Snippet</th>
+                <th>Example Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>tuple</td>
+                <td>count()</td>
+                <td>Returns the number of times a value appears</td>
+                <td>Count occurrences of a value</td>
+                <td><code>numbers = (1, 2, 2, 3)<br>count = numbers.count(2)</code></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>tuple</td>
+                <td>index()</td>
+                <td>Returns the index of the first occurrence</td>
+                <td>Find the index of a value</td>
+                <td><code>index = numbers.index(2)</code></td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
